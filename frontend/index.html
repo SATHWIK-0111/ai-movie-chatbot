@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AI Movie Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="chat-wrapper">
+    <div class="chat-header">
+    🎬 AI Movie Recommendation Bot
+    <button onclick="clearChat()" style="float:right; background:none; border:none; color:white; cursor:pointer;">Clear</button>
+    </div>
+
+    <div id="chat-box" class="chat-box"></div>
+
+    <div class="chat-input">
+        <input type="text" id="user-input" placeholder="Ask about movies..." onkeydown="if(event.key==='Enter') sendMessage()">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
